@@ -60,6 +60,6 @@ app.get("/vidaudit", async (req, res) => {
     res.send(formattedResult);
   } catch (error) {
     json({ success: false, error });
-    console.log(error);
+    console.log("error", error);
   }
 });
